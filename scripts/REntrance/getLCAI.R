@@ -1,6 +1,8 @@
 # This is the entrance of getLCAI
 
-setwd("./")
+base_path = "~/Code/getLCAI_web/getLCAI_web/scripts/REntrance";
+setwd(base_path)
+.libPaths(base_path)
 
 args=commandArgs()
 
@@ -8,7 +10,7 @@ exp_test_path = args[6] #"./test_data/exp_GSE165843.txt"
 pheno_test_path = args[7]#"./test_data/GSE165843_phe.txt"
 control_type = args[8]#"shAMPKa"
 experimental_type = args[9]#"shCTL"
-data_type = args[10]#"Array" 
+data_type = args[10]#"Array"
 
 install.packages("./getLCAI_1.0.1.tar.gz",
                  repos = NULL,
