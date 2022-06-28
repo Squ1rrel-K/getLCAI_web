@@ -24,7 +24,7 @@ class HomepageController extends Controller
 
         exec($command, $output, $code);
         var_dump($output);
-        echo $code;
+        echo "result code is: ".$code;
         return;
     }
 }
