@@ -20,7 +20,7 @@ class HomepageController extends Controller
         $control_type = $request->input('controlType');
         $experimental_type = $request->input('experimentalType');
         $data_type = $request->input('dataType');
-        $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type";
+        $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type 2&>1";
 
         echo $command."\n";
         exec($command, $output, $code);
