@@ -22,7 +22,7 @@ class HomepageController extends Controller
         $data_type = $request->input('dataType');
         $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type";
 
-        exec($command, $output, $code);
+        exec($command." 2&>1", $output, $code);
         var_dump($output);
         echo "result code is: ".$code;
         return;
