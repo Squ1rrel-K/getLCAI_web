@@ -8,7 +8,6 @@
 </head>
 <body>
 <form action="{{route('getLCAIResults')}}" method="post" enctype="multipart/form-data">
-    @csrf
     <div class="form-group">
         <label for="expFile">exp input</label>
         <input type="file" class="form-control-file" id="expFile" name="expFile">
