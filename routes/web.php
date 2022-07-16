@@ -13,5 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','HomepageController@home');
-Route::post('/getLCAI','HomepageController@getLCAIResults')->name('getLCAIResults');
+Route::get('/','HomepageController@home')->name('home');
+Route::post('/','HomepageController@DoGetLCAI')->name('DoGetLCAI');
