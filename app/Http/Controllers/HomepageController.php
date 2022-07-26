@@ -22,7 +22,6 @@ class HomepageController extends Controller
         $experimental_type = $request->input('experimentalType');
         $data_type = $request->input('dataType');
         $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type 2&>1";
-
         exec($command, $output, $result_code);
         return view('home',["output"=>$output]);
     }

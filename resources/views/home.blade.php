@@ -1,9 +1,11 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <script src="{{mix('js/app.js')}}"></script>
+
     <title>Welcome to getLCAI</title>
 </head>
 <body style="background-color: #fff">
@@ -31,6 +33,7 @@
     <div class="row p-3 pt-5 m-1" style="border: solid #f8f9fa">
 
         <div class="col-6 pt-2">
+            <h3 class="pb-2">Values</h3>
             <form action="{{route('DoGetLCAI')}}" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <div class="row mb-2">
@@ -76,13 +79,23 @@
                 </div>
             </form>
         </div>
-        <div class="col-6 pt-2">
-            <h3>Result</h3>
+        <div class="col-6 pt-2" style="border-left: 1px solid #eee">
+            <h3>Results</h3>
             @if($output ?? ''!=null)
                 <p>{{var_dump($output ?? '')}}</p>
-                @endif
+
+            @else
+
+                <div class="d-flex align-items-center">
+                    <strong>Please set values and press the 'submit' button..</strong>
+                    <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+                </div>
+
+            @endif
         </div>
+
     </div>
+
 
 </div>
 

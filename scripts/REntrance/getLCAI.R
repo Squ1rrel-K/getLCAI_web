@@ -4,6 +4,9 @@ base_path = "~/Code/getLCAI_web/getLCAI_web/scripts/REntrance";
 setwd(base_path)
 .libPaths(base_path)
 
+shCTL
+asd
+
 args=commandArgs()
 
 exp_test_path = args[6] #"./test_data/exp_GSE165843.txt"
