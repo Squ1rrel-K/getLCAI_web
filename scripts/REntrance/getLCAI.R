@@ -1,11 +1,8 @@
-# This is the entrance of getLCAI
+# This is the entrance of getLCAI_web
 
 base_path = "~/Code/getLCAI_web/getLCAI_web/scripts/REntrance";
 setwd(base_path)
 .libPaths(base_path)
-
-shCTL
-asd
 
 args=commandArgs()
 

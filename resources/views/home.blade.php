@@ -81,8 +81,8 @@
         </div>
         <div class="col-6 pt-2" style="border-left: 1px solid #eee">
             <h3>Results</h3>
-            @if($output ?? ''!=null)
-                <p>{{var_dump($output ?? '')}}</p>
+            @if($output !=null)
+                <p>{{var_dump($output)}}</p>
 
             @else
 

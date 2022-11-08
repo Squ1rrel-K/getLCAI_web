@@ -1,0 +1,26 @@
+Package: getLCAI
+Title: A R package for calculating the Lung Cancer Aggressive Index
+        (LCAI)
+Version: 1.0.1
+Authors@R: 
+    person(given = "Yongqiang", family = "Kong", email = "lonelycube@163.com", role = c("aut", "cre"))
+Description: By using the mRNA expression profile data, you can analyze the 
+    action direction of target gene regulation or drug treatment on the 
+    progression of lung cancer, so as to clearly indicate the cancer inhibition 
+    effect or cancer promoting effect of this research factor (gene or drug). 
+    The Euclidean distance is calculated by three-dimensional PCA to quantify 
+    the effect of processing factors, so as to quantify and compare the function
+    of genes or drugs. This R package plays an important role in screening lung 
+    cancer target genes and targeted drugs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: R (>= 4.1.0)
+LazyData: true
+Imports: dplyr, rgl, methods
+NeedsCompilation: no
+Packaged: 2022-06-09 09:01:13 UTC; kongyongqiang
+Author: Yongqiang Kong [aut, cre]
+Maintainer: Yongqiang Kong <lonelycube@163.com>
+Built: R 4.2.0; ; 2022-11-03 02:45:52 UTC; unix
