@@ -2,6 +2,7 @@
 
 export(getlcai)
 import(dplyr)
+import(jsonlite)
 import(rgl)
 importFrom(methods,is)
 importFrom(stats,aggregate)

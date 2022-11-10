@@ -26,13 +26,23 @@
     <div class="col align-self-center mb-4 pb-3" style="border-bottom: 1px solid #eee">
         <div class="h2 text-center">Use getLCAI to analyze your data</div>
     </div>
-    <p class="ml-1">Give introduction for these values. </p>
-    <p class="ml-1">Give introduction for these values. </p>
-    <p class="ml-1">Give introduction for these values. </p>
-    <p class="ml-1">Give introduction for these values. </p>
+    <p class="ml-1"><strong>exp</strong>: an expression matrix (data.frame or file).
+        The columns of the matrix are samples and the rows are the unique genes. </p>
+    <p class="ml-1"><strong>pheno</strong>: a sample grouping information matrix (data.frame or file).
+        There are two columns in the matrix. The first column is the sample ID and the second column is the grouping
+        information. </p>
+    <p class="ml-1"><strong>control</strong>: a character vector. The group you want to set as control in
+        the group information. </p>
+    <p class="ml-1"><strong>experimental</strong>: a character vector. The group you want to set as
+        experimental in the group information. </p>
+    <p class="ml-1"><strong>type</strong>: the type of experiment to obtain mRNA expression profile data.
+        Use "Array" or "RNA-seq". </p>
     <div class="row p-3 pt-5 m-1" style="border: solid #f8f9fa">
-
-        <div class="col-6 pt-2">
+        <div class="col">
+            <div class="d-flex align-items-center mb-3">
+                <strong>Please set values and press the 'submit' button..</strong>
+                <div class="spinner-border ml-auto left" role="status" aria-hidden="true"></div>
+            </div>
             <h3 class="pb-2">Values</h3>
             <form action="{{route('DoGetLCAI')}}" method="post" enctype="multipart/form-data">
                 <div class="form-group">
@@ -69,7 +79,7 @@
                             <label for="dataType" class="col-4 pt-1">data type:</label>
                             <select id="dataType" class="form-control w-auto" name="dataType">
                                 <option selected>Array</option>
-                                <option>exp</option>
+                                <option>RNA-seq</option>
                             </select>
                         </div>
 
@@ -78,25 +88,12 @@
 
                 </div>
             </form>
+
         </div>
-        <div class="col-6 pt-2" style="border-left: 1px solid #eee">
-            <h3>Results</h3>
-            @if($output ?? '' !=null)
-                <p>{{var_dump($output ?? '')}}</p>
 
-            @else
-
-                <div class="d-flex align-items-center">
-                    <strong>Please set values and press the 'submit' button..</strong>
-                    <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
-                </div>
-
-            @endif
-        </div>
 
     </div>
-
-
+    @include('_footer')
 </div>
 
 

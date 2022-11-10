@@ -1,7 +1,7 @@
 Package: getLCAI
 Title: A R package for calculating the Lung Cancer Aggressive Index
         (LCAI)
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: 
     person(given = "Yongqiang", family = "Kong", email = "lonelycube@163.com", role = c("aut", "cre"))
 Description: By using the mRNA expression profile data, you can analyze the 
@@ -15,12 +15,12 @@ Description: By using the mRNA expression profile data, you can analyze the
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Depends: R (>= 4.1.0)
 LazyData: true
-Imports: dplyr, rgl, methods
+Imports: dplyr, rgl, methods, jsonlite
 NeedsCompilation: no
-Packaged: 2022-06-09 09:01:13 UTC; kongyongqiang
+Packaged: 2022-11-09 09:49:31 UTC; squ1rrel
 Author: Yongqiang Kong [aut, cre]
 Maintainer: Yongqiang Kong <lonelycube@163.com>
-Built: R 4.2.0; ; 2022-11-03 02:45:52 UTC; unix
+Built: R 4.2.0; ; 2022-11-10 08:05:48 UTC; unix

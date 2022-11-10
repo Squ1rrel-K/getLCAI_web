@@ -11,6 +11,12 @@ class HomepageController extends Controller
     public function home(Request $request)
     {
         return view('home');
+
+    }
+
+    public function result(Request $request)
+    {
+        return view('result');
     }
 
     public function DoGetLCAI(Request $request)
@@ -21,9 +27,15 @@ class HomepageController extends Controller
         $control_type = $request->input('controlType');
         $experimental_type = $request->input('experimentalType');
         $data_type = $request->input('dataType');
-        $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type 2&>1";
-        exec($command, $output, $result_code);
 
-        return view('home', ["output" => $output,'result_code'=>$result_code]);
+        /* problem has been found that Rscript will automatically build a getLCAI folder,
+           which causes next run to an older getLCAI version.
+         * use rm -rf to remove this folder, plan to seek a better solution later.
+         */
+        $command = "rm -rf ~/Code/getLCAI_web/getLCAI_web/scripts/REntrance/getLCAI && Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type";
+        exec($command, $output_array, $result_code);
+
+        $output = json_decode(implode('', $output_array));
+        return view('result', ["output" => $output, 'result_code' => $result_code]);
     }
 }

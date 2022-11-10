@@ -1,3 +1,5 @@
 exp_example             GSE175601 mRNA expression profile data
+getLCAI-package         A R package for calculating the Lung Cancer
+                        Aggressive Index (LCAI)
 getlcai                 getlcai
 pheno_example           GSE175601 pheno

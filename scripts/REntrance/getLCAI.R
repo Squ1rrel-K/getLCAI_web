@@ -12,7 +12,7 @@ control_type = args[8]#"shAMPKa"
 experimental_type = args[9]#"shCTL"
 data_type = args[10]#"Array"
 
-install.packages("./getLCAI_1.0.1.tar.gz",
+install.packages("./getLCAI_1.0.3.tar.gz",
                  repos = NULL,
                  type = "source")
 library(getLCAI)
