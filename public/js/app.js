@@ -37270,6 +37270,12 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+function getUploadFileName(id) {
+  filepath.value = this.value;
+  var x = document.getElementById(id);
+  x.value = 1;
+}
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
