@@ -4,15 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <script language="JavaScript" src="{{asset('js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
     <script src="{{mix('js/app.js')}}"></script>
 
-    <title>Welcome to getLCAI</title>
+
+    <title>Welcome to getLCAi</title>
 </head>
 <body style="background-color: #fff">
 @include('_header')
 <div class="container">
     <div class="jumbotron">
-        <h1 class="display-4">Welcome to getLCAI!</h1>
+        <h1 class="display-4">Welcome to getLCAi!</h1>
         <p class="lead">getLCAi is an R package which analyzes the action direction of target gene regulation or drug
             treatment on lung cancer progression.</p>
         <hr class="my-4">
@@ -85,7 +88,7 @@
                 <div class="spinner-border ml-auto left" role="status" aria-hidden="true"></div>
             </div>
             <h3 class="pb-2">Values</h3>
-            <form action="{{route('DoGetLCAI')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('DoGetLCAi')}}" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <div class="row mb-2">
                         <label for="expFile" class="col-4 pt-1">exp input:</label>
@@ -143,6 +146,10 @@
         </div>
 
 
+    </div>
+    <body style="height: 100%;width: 100%">
+    <div id="main" style="height: 500px;width: 100%">
+        <script src="{{asset('js/echarts.js')}}"></script>
     </div>
     @include('_footer')
 </div>

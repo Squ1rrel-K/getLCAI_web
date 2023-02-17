@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','HomepageController@home')->name('home');
-Route::get('/result','HomepageController@result')->name('result');
+Route::get('/', 'HomepageController@home')->name('home');
+Route::get('/result', 'HomepageController@result')->name('result');
 
-Route::post('/','HomepageController@DoGetLCAI')->name('DoGetLCAI');
+Route::post('/', 'HomepageController@DoGetLCAI')->name('DoGetLCAi');

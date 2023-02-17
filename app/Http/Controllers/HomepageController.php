@@ -19,7 +19,7 @@ class HomepageController extends Controller
         return view('result');
     }
 
-    public function DoGetLCAI(Request $request)
+    public function DoGetLCAi(Request $request)
     {
         $getLCAI_path = base_path() . '/scripts/REntrance/getLCAI.R';
         $exp_test_path = storage_path() . '/app/' . $request->file('expFile')->store('expFiles');
@@ -28,8 +28,8 @@ class HomepageController extends Controller
         $experimental_type = $request->input('experimentalType');
         $data_type = $request->input('dataType');
 
-        /* problem has been found that Rscript will automatically build a getLCAI folder,
-           which causes next run to an older getLCAI version.
+        /* problem has been found that Rscript will automatically build a getLCAi folder,
+           which causes next run to an older getLCAi version.
          * use rm -rf to remove this folder, plan to seek a better solution later.
          */
         $command = "rm -rf ~/Code/getLCAI_web/getLCAI_web/scripts/REntrance/getLCAI && Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type";
