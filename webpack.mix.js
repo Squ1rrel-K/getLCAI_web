@@ -23,6 +23,7 @@ mix.webpackConfig(webpack => {
                 jQuery: 'jquery',
                 'window.jQuery': 'jquery',
             })
-        ]
+        ],
     };
 });
+

@@ -5,8 +5,13 @@
 @import '~bootstrap/scss/bootstrap';
 
 
-/* footer */
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
+
+/* footer */
 footer {
     margin-top: 45px;
     padding-top: 5px;
