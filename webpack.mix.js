@@ -24,6 +24,21 @@ mix.webpackConfig(webpack => {
                 'window.jQuery': 'jquery',
             })
         ],
+
     };
 });
 
+mix.webpackConfig({
+    module: {
+        rules: [
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'images/[name].[ext]'
+                }
+            }
+
+        ],
+    },
+})

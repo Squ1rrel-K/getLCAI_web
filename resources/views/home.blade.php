@@ -14,7 +14,7 @@
 @include('_header')
 
 
-<div class="jumbotron container " style="background-color:rgb(128 128 128 / 35%)">
+<div class="jumbotron container " style="background-color:rgb(128 128 128 / 30%)">
     <h1 class="display-4">Welcome to getLCAi!</h1>
     <p class="lead">getLCAi is an R package which analyzes the action direction of target gene regulation or drug
         treatment on lung cancer progression.</p>
