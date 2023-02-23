@@ -4,19 +4,30 @@
             <img src="{{asset('images/logo.jpg')}}"
                  width="100" height="35"
                  class="d-inline-block align-top"
-                 alt=""></a>
+                 alt="">
+        </a>
 
         <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" href={{asset('storage/getLCAI_Manual.md')}}>Tutorial</a>
+                <a class="nav-link" href={{asset('storage/getLCAI_Manual.md')}}>
+                    Tutorial
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href=#>Document</a>
+                <a class="nav-link" href=#>
+                    Document
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href=#>Connect</a>
+                <a class="nav-link" href=#>
+                    Report
+                </a>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link" href=#>
+                    Connect
+                </a>
+            </li>
         </ul>
 
     </div>

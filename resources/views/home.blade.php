@@ -13,7 +13,7 @@
 <body style="background-color: #fff">
 @include('_header')
 
-
+{{--jumbotron--}}
 <div class="jumbotron container " style="background-color:rgb(128 128 128 / 30%)">
     <h1 class="display-4">Welcome to getLCAi!</h1>
     <p class="lead">getLCAi is an R package which analyzes the action direction of target gene regulation or drug
@@ -22,12 +22,13 @@
     <p>getLCAi can clearly indicate the anti-cancer or cancer promoting effect of this research factor (gene or
         drug).</p>
     <a class="btn btn-primary btn-lg" href="https://github.com/Squ1rrel-K/getLCAI" role="button">Learn more</a>
-
-
 </div>
+
+
 <div class="container">
+    <i class="bi bi-chevron-right" style="font-size: 24px"></i>
     <div class="col align-self-center mb-4 pb-5" style="border-bottom: 1px solid #dcdfe6">
-        <div class="pt-5"></div>
+
         <div class="text-center p-2">
             <h1 style="font-family: 'Microsoft YaHei UI Light',sans-serif;font-size: 36px;margin-bottom: 0">
                 Using getLCAi today
@@ -40,8 +41,7 @@
 
         </div>
         <div class="text-center p-3" style="height: 100px">
-            <a type="button" class="btn btn-primary btn-lg" style="color: #fff" href="#focus"><span
-                    style="font-family: 'Microsoft YaHei UI Light',sans-serif;font-size: 20px;">Analyze</span></a>
+            <a class="btn btn-primary btn-lg" href="#"><i class="bi bi-caret-right"></i>More info</a>
         </div>
     </div>
 </div>
@@ -100,14 +100,15 @@
 </div>-->
 
 <div class="container">
+    <div class="d-flex align-items-center mb-3">
+        <i class="bi bi-chevron-right" style="font-size: 24px;margin-right: 5px"></i>
+        <strong>Please set values and press the 'submit' button.</strong>
+        <div class="spinner-border ml-auto left" role="status" aria-hidden="true"></div>
+    </div>
     <div class="row ml-3 mr-3">
-
         <div class="col col-5 pt-5" style="border-right: 1px solid #dcdfe6 ">
-            <div class="d-flex align-items-center mb-3">
-                <strong>Please set values and press the 'submit' button..</strong>
-                <div class="spinner-border ml-auto left" role="status" aria-hidden="true"></div>
-            </div>
-            <h3 class="pb-2">Values</h3>
+
+
             <form action="{{route('DoGetLCAi')}}" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <div class="row mb-2">
@@ -159,12 +160,15 @@
 
                     </div>
                     <a id="focus"></a>
-                    <button type="submit" class="btn btn-primary">submit</button>
+
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-caret-right"></i>submit</button>
+
 
                 </div>
             </form>
 
         </div>
+
 
         <div id="main" class="col col-7">
             <script src="{{asset('js/echarts.js')}}"></script>
