@@ -1,10 +1,10 @@
 <nav class="navbar navbar-light p-3">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src="{{asset('storage/images/logo2.jpg')}}"
-                 width="35" height="35"
+            <img src="{{asset('storage/images/logo.jpg')}}"
+                 width="100" height="35"
                  class="d-inline-block align-top"
-                 alt=""><span class="pl-2" style="font-family: 'Microsoft YaHei UI',sans-serif;">getLCAI</span></a>
+                 alt=""></a>
 
         <ul class="nav justify-content-end">
             <li class="nav-item">
