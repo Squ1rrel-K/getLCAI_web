@@ -1,22 +1,10 @@
 import * as echarts from 'echarts';
 import 'echarts-gl';
 
-var myChart = echarts.init(document.getElementById('main'));
+const myChart = echarts.init(document.getElementById('main'));
 
-function getRandomLine(n) {
-    let res = [];
-    for (var i = 0; i < n; i++) {
-        res.push([
-            Math.floor((Math.random() * 100) + 1),
-            Math.floor((Math.random() * 100) + 1),
-            Math.floor((Math.random() * 100) + 1)
-        ])
-    }
-    return res
 
-}
-
-let option = {
+let preSetOption = {
 
     grid3D: {},
     xAxis3D: {type: 'value', max: 100},
@@ -44,10 +32,6 @@ let option = {
         }
     },
 
-
-    dataset: {
-        source: getRandomLine(200)
-    },
     series: [
         {
             type: 'scatter3D',
@@ -59,7 +43,38 @@ let option = {
             },
         },
     ],
+    dataset: {
+        source: getRandomLine(300)
+    }
 
 }
+myChart.setOption(preSetOption);
 
-myChart.setOption(option);
+// duel with data uploaded asynchronously
+function buildEcharts(dataPath) {
+    $.get(dataPath).done(function (data) {
+
+        let afterOption = {
+            dataset: {
+                source: getRandomLine(300)
+            }
+        }
+
+        myChart.setOption(afterOption)
+        myChart.hideLoading();
+    })
+}
+
+
+function getRandomLine(n) {
+    let res = [];
+    for (var i = 0; i < n; i++) {
+        res.push([
+            Math.floor((Math.random() * 100) + 1),
+            Math.floor((Math.random() * 100) + 1),
+            Math.floor((Math.random() * 100) + 1)
+        ])
+    }
+    return res
+
+}

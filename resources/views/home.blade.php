@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
-    <script src="{{mix('js/app.js')}}"></script>
 
 
     <title>Welcome to getLCAi</title>
@@ -26,15 +25,17 @@
 
 
 <div class="container">
-    <i class="bi bi-chevron-right" style="font-size: 24px"></i>
-    <div class="col align-self-center mb-4 pb-5" style="border-bottom: 1px solid #dcdfe6">
 
-        <div class="text-center p-2">
+    <div class="shadow rounded align-self-center mb-4 pb-5">
+        <i class="bi bi-chevron-right" style="font-size: 24px"></i>
+        <div class="p-2">
+
             <h1 style="font-family: 'Microsoft YaHei UI Light',sans-serif;font-size: 36px;margin-bottom: 0">
-                Using getLCAi today
+
+                <div class="text-center"> Using getLCAi today</div>
             </h1>
             <br>
-            <h1 style="font-family: 'Microsoft YaHei UI Light',sans-serif;font-size: 36px;">
+            <h1 class="text-center" style="font-family: 'Microsoft YaHei UI Light',sans-serif;font-size: 36px;">
                 Analyzing lung cancer progression
             </h1>
 
@@ -109,7 +110,7 @@
         <div class="col col-5 pt-5" style="border-right: 1px solid #dcdfe6 ">
 
 
-            <form action="{{route('DoGetLCAi')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('dataProcessing')}}" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <div class="row mb-2">
                         <label for="expFile" class="col-4 pt-1">exp input:</label>
@@ -171,7 +172,7 @@
 
 
         <div id="main" class="col col-7">
-            <script src="{{asset('js/echarts.js')}}"></script>
+            @include('painter')
         </div>
     </div>
 

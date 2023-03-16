@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use JetBrains\PhpStorm\NoReturn;
 
 class HomepageController extends Controller
 {
@@ -37,5 +36,10 @@ class HomepageController extends Controller
 
         $output = json_decode(implode('', $output_array));
         return view('result', ["output" => $output, 'result_code' => $result_code]);
+    }
+
+    public function dataProcessing(Request $request)
+    {
+        $path = 'storage/data/data.json';
     }
 }
