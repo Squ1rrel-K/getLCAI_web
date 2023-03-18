@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
-
-
     <title>Welcome to getLCAi</title>
 </head>
 <body style="background-color: #fff">
 @include('_header')
 
-{{--jumbotron--}}
-<div class="jumbotron container " style="background-color:rgb(128 128 128 / 30%)">
+{{--jumbotron S--}}
+<div class="jumbotron container jumbotron-home">
     <h1 class="display-4">Welcome to getLCAi!</h1>
     <p class="lead">getLCAi is an R package which analyzes the action direction of target gene regulation or drug
         treatment on lung cancer progression.</p>
@@ -22,10 +20,10 @@
         drug).</p>
     <a class="btn btn-primary btn-lg" href="https://github.com/Squ1rrel-K/getLCAI" role="button">Learn more</a>
 </div>
+{{--jumbotron E--}}
 
-
+{{--Main Block S--}}
 <div class="container">
-
     <div class="shadow rounded align-self-center mb-4 pb-5">
         <i class="bi bi-chevron-right" style="font-size: 24px"></i>
         <div class="p-2">
@@ -45,62 +43,11 @@
             <a class="btn btn-primary btn-lg" href="#"><i class="bi bi-caret-right"></i>More info</a>
         </div>
     </div>
-</div>
 
 
-<!--<div class="row">
-    <div class="col col-2">
-        <strong>exp:</strong>
-    </div>
-    <div class="col col-10">
-        <p class="ml-1"> an expression matrix (data.frame or file).
-            The columns of the matrix are samples and the rows are the unique genes. </p>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col col-2">
-        <strong>pheno:</strong>
-    </div>
-    <div class="col col-10">
-        <p class="ml-1"> a sample grouping information matrix (data.frame or file).
-            There are two columns in the matrix. The first column is the sample ID and the second column is the
-            grouping
-            information. </p>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col col-2">
-        <strong>control:</strong>
-    </div>
-    <div class="col col-10">
-        <p class="ml-1">a character vector. The group you want to set as control in
-            the group information. </p>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col col-2">
-        <strong>experimental:</strong>
-    </div>
-    <div class="col col-10">
-        <p class="ml-1">a character vector. The group you want to set as
-            experimental in the group information. </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col col-2">
-        <strong>type:</strong>
-    </div>
-    <div class="col col-10">
-        <p class="ml-1">the type of experiment to obtain mRNA expression profile data.
-            Use "Array" or "RNA-seq". </p>
-    </div>
-</div>-->
-
-<div class="container">
     <div class="d-flex align-items-center mb-3">
         <i class="bi bi-chevron-right" style="font-size: 24px;margin-right: 5px"></i>
         <strong>Please set values and press the 'submit' button.</strong>
@@ -179,6 +126,7 @@
 
     @include('_footer')
 </div>
+{{--Main Block E--}}
 
 
 </body>

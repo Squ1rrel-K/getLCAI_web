@@ -1,4 +1,2 @@
-<script>
-    import * as ec from{{asset('js/echarts.js')}}
-
+<script type="text/javascript" src="{{asset('js/echarts.js')}}">
 </script>

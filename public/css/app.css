@@ -18964,6 +18964,10 @@ body {
   width: 100%;
 }
 
+.jumbotron-home {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
 /* footer */
 
 footer {
