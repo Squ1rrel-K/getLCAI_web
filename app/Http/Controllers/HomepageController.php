@@ -13,13 +13,10 @@ class HomepageController extends Controller
 
     }
 
-    public function result(Request $request)
-    {
-        return view('result');
-    }
-
     public function DoGetLCAi(Request $request)
     {
+        if ($request->file('expFile') == null || $request->file('phenoFile') == null)
+            return redirect()->response(['code' => -1]);
         $getLCAI_path = base_path() . '/scripts/REntrance/getLCAI.R';
         $exp_test_path = storage_path() . '/app/' . $request->file('expFile')->store('expFiles');
         $pheno_test_path = storage_path() . '/app/' . $request->file('phenoFile')->store('phenoFiles');
@@ -35,11 +32,7 @@ class HomepageController extends Controller
         exec($command, $output_array, $result_code);
 
         $output = json_decode(implode('', $output_array));
-        return view('result', ["output" => $output, 'result_code' => $result_code]);
+        return response(["output" => $output, 'result_code' => $result_code]);
     }
 
-    public function dataProcessing(Request $request)
-    {
-        $path = 'storage/data/data.json';
-    }
 }

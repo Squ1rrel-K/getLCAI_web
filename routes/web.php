@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomepageController@home')->name('home');
 
-Route::post('/', 'HomepageController@dataProcessing')->name('dataProcessing');
+Route::post('/', 'HomepageController@DoGetLCAi')->name('home-doGetLCAi');

@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="1.1.0 重构前端">
+    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="set proper default graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/echarts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/painter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +151,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Software/laragon/www/getLCAI_web/storage/app/public/images",
+    "last_opened_file_path": "D:/Software/laragon/www/getLCAI_web/public/storage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -154,13 +162,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\images" />
-      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public" />
-      <recent name="D:\Software\laragon\www\getLCAI_web" />
-      <recent name="D:\Software\laragon\www\getLCAI_web\resources\font" />
-      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\imgs" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\storage" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\storage\data" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\data" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\images" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\resources\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\storage" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\storage\data" />
       <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\images" />
     </key>
   </component>
@@ -197,7 +207,21 @@
       <workItem from="1676968374034" duration="1652000" />
       <workItem from="1676988615160" duration="2561000" />
       <workItem from="1677040820281" duration="12192000" />
-      <workItem from="1677119703589" duration="1641000" />
+      <workItem from="1677119703589" duration="3963000" />
+      <workItem from="1677131195022" duration="5498000" />
+      <workItem from="1677235093600" duration="321000" />
+      <workItem from="1677246819955" duration="616000" />
+      <workItem from="1677380783448" duration="41000" />
+      <workItem from="1678065634584" duration="3880000" />
+      <workItem from="1678347965302" duration="262000" />
+      <workItem from="1678459191903" duration="349000" />
+      <workItem from="1678955485695" duration="242000" />
+      <workItem from="1679040496402" duration="3167000" />
+      <workItem from="1679113092230" duration="997000" />
+      <workItem from="1679117534096" duration="1191000" />
+      <workItem from="1679273711682" duration="256000" />
+      <workItem from="1679656010031" duration="1605000" />
+      <workItem from="1679970942680" duration="7913000" />
     </task>
     <task id="LOCAL-00001" summary="add echarts 3D">
       <created>1676622980949</created>
@@ -213,7 +237,35 @@
       <option name="project" value="LOCAL" />
       <updated>1677053881991</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="调整前端">
+      <created>1677121657939</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677121657939</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix logo">
+      <created>1677123347449</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677123347449</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add some icons">
+      <created>1677138069056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677138069056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="set proper default graph">
+      <created>1679118128390</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679118128390</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +298,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add echarts 3D" />
     <MESSAGE value="1.1.0 重构前端" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1.0 重构前端" />
+    <MESSAGE value="调整前端" />
+    <MESSAGE value="fix logo" />
+    <MESSAGE value="add some icons" />
+    <MESSAGE value="set proper default graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="set proper default graph" />
   </component>
 </project>

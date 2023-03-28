@@ -13,7 +13,6 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js');
 mix.js('resources/js/echarts.js', 'public/js/echarts.js')
-    //.babel('public/js/echartsTmp.js','public/js/echarts.js')
     .sass('resources/sass/app.scss', 'public/css');
 
 mix.webpackConfig(webpack => {

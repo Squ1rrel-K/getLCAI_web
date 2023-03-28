@@ -9,23 +9,13 @@
 
         <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" href={{asset('storage/getLCAI_Manual.md')}}>
-                    Tutorial
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href=#>
+                <a class="nav-link" href={{asset('storage/getLCAI_Manual.pdf')}}>
                     Document
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href=#>
-                    Report
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href=#>
-                    Connect
+                <a class="nav-link" href='http://bio.jsnu.edu.cn/f7/df/c16476a325599/page.htm'>
+                    Connect Us
                 </a>
             </li>
         </ul>

@@ -30,8 +30,15 @@ myChart.setOption(option);
 /**
  * callback strategy is used to find specific group index for each series, which is unrecommended.
  */
-$.get('storage/data/default.json').done(function (data) {
+$.get('storage/data/result.json').done(function (data) {
+    console.log(data.geneinfo);
     myChart.setOption({
+        title: {
+            text: "The lung cancer aggressive index (LCAI) is: " + data.lcai,
+            subtext: 'GEO_genes: ' + data.geneinfo[0].GEO_genes
+                + ', merged_genes: ' + data.geneinfo[0].merged_genes
+                + ', proportion: ' + data.geneinfo[0].proportion
+        },
         dataset: {
             dimensions: [
                 'PC1',
@@ -39,7 +46,7 @@ $.get('storage/data/default.json').done(function (data) {
                 'PC3'
             ],
 
-            source: data,
+            source: data.pheno,
         },
 
         series: {
