@@ -19,6 +19,7 @@ class HomepageController extends Controller
         if ($request->file('expFile') == null || $request->file('phenoFile') == null)
             return response(['code' => 1]);
 
+        $folder_base_path = base_path() . '/scripts/REntrance/getLCAI';
         $getLCAI_path = base_path() . '/scripts/REntrance/getLCAI.R';
         $exp_test_path = storage_path() . '/app/' . $request->file('expFile')->store('expFiles');
         $pheno_test_path = storage_path() . '/app/' . $request->file('phenoFile')->store('phenoFiles');
@@ -31,7 +32,7 @@ class HomepageController extends Controller
            which causes next run to an older getLCAi version.
          * use rm -rf to remove this folder, plan to seek a better solution later.
          */
-        $command = "rm -rf ~/Code/getLCAI_web/getLCAI_web/scripts/REntrance/getLCAI && Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_name";
+        $command = "rm -rf $folder_base_path && Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_name";
         exec($command, $output_array, $result_code);
 
         $output = json_decode(implode('', $output_array));

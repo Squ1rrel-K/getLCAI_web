@@ -213,7 +213,7 @@
       <workItem from="1679656010031" duration="1605000" />
       <workItem from="1679970942680" duration="8933000" />
       <workItem from="1679987976196" duration="608000" />
-      <workItem from="1680007446595" duration="3417000" />
+      <workItem from="1680007446595" duration="3719000" />
     </task>
     <task id="LOCAL-00001" summary="add echarts 3D">
       <created>1676622980949</created>
@@ -278,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680010465528</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test">
+      <created>1680011164201</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680011164201</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
