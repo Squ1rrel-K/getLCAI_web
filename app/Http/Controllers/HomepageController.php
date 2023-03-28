@@ -26,7 +26,7 @@ class HomepageController extends Controller
         $control_type = $request->input('controlType');
         $experimental_type = $request->input('experimentalType');
         $data_type = $request->input('dataType');
-        $json_name = storage_path() . '/app/' . (string)time() . 'result.json';
+        $json_name = storage_path() . '/app/' . time() . 'result.json';
 
         /* problem has been found that Rscript will automatically build a getLCAi folder,
            which causes next run to an older getLCAi version.
