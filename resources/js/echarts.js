@@ -36,8 +36,8 @@ $.get('storage/data/result.json').done(function (data) {
         title: {
             text: "The lung cancer aggressive index (LCAI) is: " + data.lcai,
             subtext: 'GEO_genes: ' + data.geneinfo[0].GEO_genes
-                + ', merged_genes: ' + data.geneinfo[0].merged_genes
-                + ', proportion: ' + data.geneinfo[0].proportion
+                + '\nmerged_genes: ' + data.geneinfo[0].merged_genes
+                + '\nproportion: ' + data.geneinfo[0].proportion
         },
         dataset: {
             dimensions: [

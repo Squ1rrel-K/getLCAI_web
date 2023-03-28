@@ -15,20 +15,23 @@ class HomepageController extends Controller
 
     public function DoGetLCAi(Request $request)
     {
+
         if ($request->file('expFile') == null || $request->file('phenoFile') == null)
-            return redirect()->response(['code' => -1]);
+            return response(['code' => 1]);
+
         $getLCAI_path = base_path() . '/scripts/REntrance/getLCAI.R';
         $exp_test_path = storage_path() . '/app/' . $request->file('expFile')->store('expFiles');
         $pheno_test_path = storage_path() . '/app/' . $request->file('phenoFile')->store('phenoFiles');
         $control_type = $request->input('controlType');
         $experimental_type = $request->input('experimentalType');
         $data_type = $request->input('dataType');
+        $json_name = '/storage/data' . (string)time() . 'result.json';
 
         /* problem has been found that Rscript will automatically build a getLCAi folder,
            which causes next run to an older getLCAi version.
          * use rm -rf to remove this folder, plan to seek a better solution later.
          */
-        $command = "rm -rf ~/Code/getLCAI_web/getLCAI_web/scripts/REntrance/getLCAI && Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type";
+        $command = "rm -rf ~/Code/getLCAI_web/getLCAI_web/scripts/REntrance/getLCAI && Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_name";
         exec($command, $output_array, $result_code);
 
         $output = json_decode(implode('', $output_array));

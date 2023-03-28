@@ -4,18 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="set proper default graph">
+    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="change frontend style">
+      <change afterPath="$PROJECT_DIR$/scripts/REntrance/getLCAI_1.0.4.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/REntrance/getLCAI_test.R" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/echarts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/painter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI.R" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/REntrance/getLCAI.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/DESCRIPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/INDEX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/Meta/Rd.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/Meta/data.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/Meta/features.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/Meta/hsearch.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/Meta/links.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/Meta/nsInfo.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/Meta/package.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/NAMESPACE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/R/getLCAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/R/getLCAI.rdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/R/getLCAI.rdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/R/sysdata.rdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/R/sysdata.rdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/data/Rdata.rdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/data/Rdata.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/data/Rdata.rdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/help/AnIndex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/help/aliases.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/help/getLCAI.rdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/help/getLCAI.rdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/help/paths.rds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/html/00Index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI/html/R.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +172,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Software/laragon/www/getLCAI_web/public/storage",
+    "last_opened_file_path": "D:/Software/laragon/www/getLCAI_web/scripts/REntrance",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -162,13 +183,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Software\laragon\www\getLCAI_web\scripts\REntrance" />
       <recent name="D:\Software\laragon\www\getLCAI_web\public\storage" />
       <recent name="D:\Software\laragon\www\getLCAI_web\public\storage\data" />
       <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\data" />
       <recent name="D:\Software\laragon\www\getLCAI_web\public\images" />
-      <recent name="D:\Software\laragon\www\getLCAI_web\resources\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\data" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\storage" />
       <recent name="D:\Software\laragon\www\getLCAI_web\public\storage" />
       <recent name="D:\Software\laragon\www\getLCAI_web\public\storage\data" />
       <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\images" />
@@ -221,7 +244,9 @@
       <workItem from="1679117534096" duration="1191000" />
       <workItem from="1679273711682" duration="256000" />
       <workItem from="1679656010031" duration="1605000" />
-      <workItem from="1679970942680" duration="7913000" />
+      <workItem from="1679970942680" duration="8933000" />
+      <workItem from="1679987976196" duration="608000" />
+      <workItem from="1680007446595" duration="2715000" />
     </task>
     <task id="LOCAL-00001" summary="add echarts 3D">
       <created>1676622980949</created>
@@ -265,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679118128390</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change frontend style">
+      <created>1679981895881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679981895881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +334,7 @@
     <MESSAGE value="fix logo" />
     <MESSAGE value="add some icons" />
     <MESSAGE value="set proper default graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="set proper default graph" />
+    <MESSAGE value="change frontend style" />
+    <option name="LAST_COMMIT_MESSAGE" value="change frontend style" />
   </component>
 </project>
