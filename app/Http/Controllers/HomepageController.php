@@ -38,7 +38,7 @@ class HomepageController extends Controller
          * use rm -rf to remove this folder, plan to seek a better solution later.
          * rm -rf $folder_base_path &&
          */
-        $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_storage_path 2&>1";
+        $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_storage_path";
         exec($command, $output_array, $result_code);
 
         $output = json_decode(implode('', $output_array));
