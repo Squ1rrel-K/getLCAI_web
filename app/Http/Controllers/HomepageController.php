@@ -11,7 +11,7 @@ class HomepageController extends Controller
     public function home(Request $request)
     {
 
-        return view('home', ['json_path' => 'storage/data/result.json']);
+        return view('home', ['json_path' => '']);
 
     }
 
@@ -44,7 +44,7 @@ class HomepageController extends Controller
         $output = json_decode(implode('', $output_array));
         Log::debug($output);
         Log::debug($command);
-        return view('home', ['json_path' => $json_public_path]);
+        return view('home', ['json_path' => 'storage/data/result.json']);
         // return response(['c' => $command, "output" => $output_array, 'result_code' => $result_code]);
     }
 
