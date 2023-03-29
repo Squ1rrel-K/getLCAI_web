@@ -11,7 +11,7 @@ experimental_type = args[9]#"shCTL"
 data_type = args[10]#"Array"
 json_name = args[11]#"result.json"
 
-install.packages("~/Code/getLCAI_web/scripts/REntrance/getLCAI_1.0.4.tar.gz",
+install.packages("./scripts/REntrance/getLCAI_1.0.4.tar.gz",
                  repos = NULL,
                  type = "source")
 library(getLCAI)

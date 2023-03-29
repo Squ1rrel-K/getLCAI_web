@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/public/js/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/REntrance/test_data/GSE64766_phe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/REntrance/test_data/GSE64766_unique_exp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/1" beforeDir="false" afterPath="$PROJECT_DIR$/public/1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/echarts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/painter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI.R" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/REntrance/getLCAI.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI_1.0.3.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/REntrance/getLCAI_test.R" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/REntrance/getLCAI_test.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/REntrance/test_data/GSE165843_phe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/REntrance/test_data/exp_GSE165843.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,7 +214,7 @@
       <workItem from="1679970942680" duration="8933000" />
       <workItem from="1679987976196" duration="608000" />
       <workItem from="1680007446595" duration="3719000" />
-      <workItem from="1680012469436" duration="11776000" />
+      <workItem from="1680012469436" duration="12067000" />
     </task>
     <task id="LOCAL-00001" summary="add echarts 3D">
       <created>1676622980949</created>
