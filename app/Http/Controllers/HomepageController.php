@@ -43,6 +43,7 @@ class HomepageController extends Controller
 
         $output = json_decode(implode('', $output_array));
         Log::debug($output);
+        Log::debug($command);
         return view('home', ['json_path' => $json_public_path]);
         // return response(['c' => $command, "output" => $output_array, 'result_code' => $result_code]);
     }
