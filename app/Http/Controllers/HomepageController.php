@@ -11,15 +11,12 @@ class HomepageController extends Controller
     public function home(Request $request)
     {
 
-        return view('home', ['json_path' => '']);
+        return view('home', ['json_path' => 'storage/data/_1680053129_result.json']);
 
     }
 
     public function DoGetLCAi(Request $request)
     {
-
-        if ($request->file('expFile') == null || $request->file('phenoFile') == null)
-            return response(['code' => 1]);
 
         $folder_base_path = base_path() . '/scripts/REntrance/getLCAI';
         $getLCAI_path = base_path() . '/scripts/REntrance/getLCAI.R';
