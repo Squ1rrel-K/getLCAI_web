@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class HomepageController extends Controller
 {
@@ -37,10 +38,11 @@ class HomepageController extends Controller
          * use rm -rf to remove this folder, plan to seek a better solution later.
          * rm -rf $folder_base_path &&
          */
-        $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_storage_path";
+        $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_storage_path 2&>1";
         exec($command, $output_array, $result_code);
 
         $output = json_decode(implode('', $output_array));
+        Log::debug($output);
         return view('home', ['json_path' => $json_public_path]);
         // return response(['c' => $command, "output" => $output_array, 'result_code' => $result_code]);
     }

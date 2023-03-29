@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="test" />
+    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,10 +138,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Server/Code/getLCAI_web/scripts/REntrance/test_data",
+    "last_opened_file_path": "D:/Software/laragon/www/getLCAI_web/scripts/REntrance",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -150,18 +153,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Server\Code\getLCAI_web\scripts\REntrance\test_data" />
-      <recent name="F:\Server\Code\getLCAI_web\scripts" />
-      <recent name="F:\Server\Code\getLCAI_web\storage\app\public\data" />
-      <recent name="F:\Server\Code\getLCAI_web\scripts\REntrance" />
       <recent name="D:\Software\laragon\www\getLCAI_web\scripts\REntrance" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\storage" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\storage\data" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\data" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Server\Code\getLCAI_web\storage\app\public\data" />
-      <recent name="F:\Server\Code\getLCAI_web\storage\app\data" />
-      <recent name="F:\Server\Code\getLCAI_web\storage\app" />
-      <recent name="F:\Server\Code\getLCAI_web\scripts\REntrance" />
       <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\data" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\storage" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\storage" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\public\storage\data" />
+      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -214,7 +217,6 @@
       <workItem from="1679970942680" duration="8933000" />
       <workItem from="1679987976196" duration="608000" />
       <workItem from="1680007446595" duration="3719000" />
-      <workItem from="1680012469436" duration="12067000" />
     </task>
     <task id="LOCAL-00001" summary="add echarts 3D">
       <created>1676622980949</created>
