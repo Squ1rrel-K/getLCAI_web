@@ -9,7 +9,8 @@ class HomepageController extends Controller
 
     public function home(Request $request)
     {
-        return view('home');
+
+        return view('home', ['json_path' => 'storage/data/result.json']);
 
     }
 
@@ -26,17 +27,22 @@ class HomepageController extends Controller
         $control_type = $request->input('controlType');
         $experimental_type = $request->input('experimentalType');
         $data_type = $request->input('dataType');
-        $json_name = storage_path() . '/app/' . time() . 'result.json';
+        $json_name = '_' . time() . '_result.json';
+        $json_storage_path = storage_path() . '/app/public/data/' . $json_name;
+        $json_public_path = '/storage/data/' . $json_name;
+        session(['json_name' => $json_name]);
 
         /* problem has been found that Rscript will automatically build a getLCAi folder,
-           which causes next run to an older getLCAi version.
+           which should be removed by process but failed.
          * use rm -rf to remove this folder, plan to seek a better solution later.
+         * rm -rf $folder_base_path &&
          */
-        $command = "rm -rf $folder_base_path && Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_name";
+        $command = "Rscript $getLCAI_path $exp_test_path $pheno_test_path $control_type $experimental_type $data_type $json_storage_path";
         exec($command, $output_array, $result_code);
 
         $output = json_decode(implode('', $output_array));
-        return response(["output" => $output, 'result_code' => $result_code]);
+        return view('home', ['json_path' => $json_public_path]);
+        // return response(['c' => $command, "output" => $output_array, 'result_code' => $result_code]);
     }
 
 }

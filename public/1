@@ -1,0 +1,6 @@
+Warning in gzfile(file, "rb") :
+  cannot open compressed file '/home/vagrant/Code/getLCAI_web/scripts/REntrance/getLCAI/Meta/package.rds', probable reason 'No such file or directory'
+Warning in library(pkg_name, lib.loc = lib, character.only = TRUE, logical.return = TRUE) :
+  there is no package called 'getLCAI'
+Error: loading failed
+Execution halted

@@ -1,9 +1,6 @@
 # This is the entrance of getLCAI_web
 
-base_path = "./scripts/REntrance";
-#base_path = "D:/Software/laragon/www/getLCAI_web/scripts/REntrance";
-setwd(base_path)
-.libPaths(base_path)
+
 
 args=commandArgs()
 
@@ -14,7 +11,7 @@ experimental_type = args[9]#"shCTL"
 data_type = args[10]#"Array"
 json_name = args[11]#"result.json"
 
-install.packages("./getLCAI_1.0.4.tar.gz",
+install.packages("~/Code/getLCAI_web/scripts/REntrance/getLCAI_1.0.4.tar.gz",
                  repos = NULL,
                  type = "source")
 library(getLCAI)
@@ -28,6 +25,6 @@ outlist = getlcai(
   control = control_type,
   experimental = experimental_type,
   type = data_type,
-  jsonsave=json_name
+  jsonsave = json_name
 )
 

@@ -30,8 +30,10 @@ myChart.setOption(option);
 /**
  * callback strategy is used to find specific group index for each series, which is unrecommended.
  */
-$.get('storage/data/result.json').done(function (data) {
-    console.log(data.geneinfo);
+
+$.get(document.getElementById('echartsScript').getAttribute('data')).done(function (data) {
+    console.log(sessionStorage.getItem("json"));
+    console.log(document.getElementById('echartsScript'));
     myChart.setOption({
         title: {
             text: "The lung cancer aggressive index (LCAI) is: " + data.lcai,

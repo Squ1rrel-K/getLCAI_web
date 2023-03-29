@@ -1,0 +1,11 @@
+sample	group
+MGH119	Control
+MGH119-R	Control
+MGH121	Control
+MGH125	Control
+MGH126	Control
+MGH134	Control
+MGH141	Control
+MGH157	Control
+MGH131-1	treated
+MGH131-2	treated

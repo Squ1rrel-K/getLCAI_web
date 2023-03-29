@@ -166,9 +166,13 @@
 
 
     </div>
+    <script id="echartsScript"
+            data="{{$json_path}}">
+        console.log({{$json_path}})
+    </script>
     <div id="main" class="row col m-3" style="height: 50rem">
-
-        @include('painter')
+        <script type="text/javascript" src="{{asset('js/echarts.js')}}">
+        </script>
     </div>
 
     @include('_footer')

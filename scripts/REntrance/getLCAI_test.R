@@ -1,11 +1,11 @@
 # This is the entrance of getLCAI_web
 
-#base_path = "~/Code/getLCAI_web/getLCAI_web/scripts/REntrance";
-base_path = "D:/Software/laragon/www/getLCAI_web/scripts/REntrance";
+base_path = "./scripts/REntrance";
+#base_path = "D:/Software/laragon/www/getLCAI_web/scripts/REntrance";
 setwd(base_path)
 .libPaths(base_path)
 
-args=commandArgs()
+
 
 exp_test_path = "./test_data/exp_GSE165843.txt"
 pheno_test_path = "./test_data/GSE165843_phe.txt"
@@ -28,6 +28,6 @@ outlist = getlcai(
   control = control_type,
   experimental = experimental_type,
   type = data_type,
-  jsonsave=json_name
+  jsonsave=json_name,
 )
 
