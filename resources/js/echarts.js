@@ -4,11 +4,11 @@ import 'echarts-gl';
 var myChart = echarts.init(document.getElementById('main'));
 
 const colorMap = {
-    'Control': '#FFD700',
+    'Control': '#FF8C00',
     'NLE': '#4DBBD5FF',
-    'NSCLC': '#00A087FF',
-    'SCLC': '#BC3C2999',
-    'treated': '#EE4C9799'
+    'NSCLC': '#2E8B57',
+    'SCLC': '#8B008B',
+    'treated': '#FF0000'
 };
 
 let option = {
@@ -59,9 +59,9 @@ $.get(document.getElementById('echartsScript').getAttribute('data')).done(functi
             },
 
             symbolSize: function (seriesIndex) {
-                if (seriesIndex.group === 'control' || seriesIndex.group === 'treated') {
-                    return 7
-                } else return 5
+                if (seriesIndex.group === 'Control' || seriesIndex.group === 'treated') {
+                    return 15
+                } else return 6
             },
         }
     });

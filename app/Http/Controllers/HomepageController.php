@@ -18,7 +18,6 @@ class HomepageController extends Controller
     public function DoGetLCAi(Request $request)
     {
 
-        $folder_base_path = base_path() . '/scripts/REntrance/getLCAI';
         $getLCAI_path = base_path() . '/scripts/REntrance/getLCAI.R';
         $exp_test_path = storage_path() . '/app/' . $request->file('expFile')->store('expFiles');
         $pheno_test_path = storage_path() . '/app/' . $request->file('phenoFile')->store('phenoFiles');

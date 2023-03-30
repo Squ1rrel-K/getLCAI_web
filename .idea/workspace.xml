@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="test" />
+    <list default="true" id="44ab9eb6-d2d0-4f39-9eac-f01901348818" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/echarts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/echarts.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +147,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Software/laragon/www/getLCAI_web/scripts/REntrance",
+    "last_opened_file_path": "D:/Software/laragon/www/getLCAI_web/storage/app/public/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -151,10 +158,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\data" />
       <recent name="D:\Software\laragon\www\getLCAI_web\scripts\REntrance" />
       <recent name="D:\Software\laragon\www\getLCAI_web\public\storage" />
       <recent name="D:\Software\laragon\www\getLCAI_web\public\storage\data" />
-      <recent name="D:\Software\laragon\www\getLCAI_web\storage\app\public\data" />
       <recent name="D:\Software\laragon\www\getLCAI_web\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -215,6 +222,7 @@
       <workItem from="1679970942680" duration="8933000" />
       <workItem from="1679987976196" duration="608000" />
       <workItem from="1680007446595" duration="3719000" />
+      <workItem from="1680161860475" duration="1402000" />
     </task>
     <task id="LOCAL-00001" summary="add echarts 3D">
       <created>1676622980949</created>
@@ -321,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680082217027</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="test">
+      <created>1680082698830</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680082698830</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
